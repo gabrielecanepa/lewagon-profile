@@ -51,52 +51,6 @@ a:link, a:hover, a:active {
   text-decoration: none;
 }
 
-form {
-  margin: 0 auto;
-  padding: 10px 0;
-  max-width: 70%;
-  height: auto;
-}
-
-form input[type="text"] {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  padding: 20px 0;
-  border-radius: 4px;
-  border: none;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  font-size: 14px;
-  font-weight: 400;
-  color: #595959;
-  font-family: 'Open Sans', sans-serif;
-}
-
-    textarea {
-      height: 8em;
-      line-height: 2em;
-      resize: none;
-    }
-  button {
-    @extend %elements;
-    margin-top: 1.7em;
-    background: $color-button;
-    color: #fff;
-    border-bottom: .3em solid darken($color-button, 10%);
-    text-indent: 0;
-    &:hover,
-    &:focus {
-      background: darken(#3498db, 10%);
-      border-bottom: .3em solid darken($color-button, 20%);
-    }
-    &:active {
-      background: darken(#3498DB, 20%);
-      border-bottom: .3em solid darken($color-button, 30%);
-    }
-  }
-}
-
 .container-fluid{
   width: 75%;
   margin: 30px auto;
@@ -319,3 +273,80 @@ form input[type="text"] {
     display: none;
   }
 }
+
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+}
+form input, form textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  width: 90%;
+  margin-top: 1em;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none;
+  font-size: 1rem;
+}
+form input:focus, form textarea:focus {
+  -moz-box-shadow: 0 0px 2px #DD5555 !important;
+  -webkit-box-shadow: 0 0px 2px #DD5555 !important;
+  box-shadow: 0 0px 2px #DD5555 !important;
+}
+form #input-submit {
+  color: white;
+  background: #DD5555;
+  cursor: pointer;
+  transition: 1s;
+}
+form #input-submit:hover {
+  -cursor: pointer;
+  color: white;
+  background-color: #C61414;
+}
+form textarea {
+  height: 9.5em;
+}
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 2%;
+}
+
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}
+
+/* Clearfix */
+.cf::before,
+.cf::after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf::after {
+  clear: both;
+}
+

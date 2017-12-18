@@ -100,12 +100,19 @@
         </div>
 
         <div class="card text-center">
-          <h2 class="section-title"><span id="title-border">Contact me</span></h2>
+          <h2 class="section-title"><span id="title-border">✉️ Contact me</span></h2>
           <form>
-            <input type="text" placeholder="Name"/>
-            <input type="text" placeholder="Email address"/>
-            <textarea id="text-area" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
-            <button>Create</button>
+            <form class="cf">
+              <div class="half left cf">
+                <input type="text" id="input-name" placeholder="Name">
+                <input type="email" id="input-email" placeholder="Email address">
+                <input type="text" id="input-subject" placeholder="Subject">
+              </div>
+              <div class="half right cf">
+                <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+              </div>
+              <input type="submit" value="Submit" id="input-submit">
+            </form>
             <p>You prefer a direct email? <a href="mailto:gabrielecanepa@icloud.com">Click here</a></p>
           </form>
         </div>
