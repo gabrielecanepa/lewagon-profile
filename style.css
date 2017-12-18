@@ -293,12 +293,11 @@ form input, form textarea {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   resize: none;
-  font-size: 1rem;
+  font-size: .9rem;
+  border: 1px solid transparent;
 }
 form input:focus, form textarea:focus {
-  -moz-box-shadow: 0 0px 2px #DD5555 !important;
-  -webkit-box-shadow: 0 0px 2px #DD5555 !important;
-  box-shadow: 0 0px 2px #DD5555 !important;
+  border: 1px solid #DD5555;
 }
 form #input-submit {
   color: white;
@@ -312,7 +311,7 @@ form #input-submit:hover {
   background-color: #C61414;
 }
 form textarea {
-  height: 9.5em;
+  height: 9.8em;
 }
 
 .half {
