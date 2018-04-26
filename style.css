@@ -125,7 +125,7 @@ a:link, a:hover, a:active {
   cursor: pointer;
 }
 #sidebar {
-  background-color: #444;
+  background-color: #DD5555;
   position: fixed;
   left: 0px;
   top: 0px;
@@ -235,6 +235,7 @@ form input, form textarea {
   resize: none;
   font-size: .9rem;
   border: 1px solid #CCC;
+  transition: all 200ms ease-out;
 }
 form input:focus, form textarea:focus {
   border: 1px solid #DD5555;
