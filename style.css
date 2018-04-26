@@ -154,7 +154,7 @@ a:link, a:hover, a:active {
 }
 #wagon-logo {
   display: inline;
-  width: 64px;
+  width: 40px;
   height: auto;
   margin-top: -12px;
   margin-bottom: -20px;
@@ -233,12 +233,9 @@ form input, form textarea {
   display: block;
   width: 90%;
   margin-top: 1em;
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   resize: none;
   font-size: .9rem;
-  border: 1px solid transparent;
+  border: 1px solid #CCC;
 }
 form input:focus, form textarea:focus {
   border: 1px solid #DD5555;
@@ -248,6 +245,8 @@ form #input-submit {
   background: #DD5555;
   cursor: pointer;
   transition: 1s;
+  width: 100%;
+  border: none;
 }
 form #input-submit:hover {
   -cursor: pointer;
@@ -257,6 +256,7 @@ form #input-submit:hover {
 form textarea {
   height: 9.8em;
 }
+
 .half {
   float: left;
   width: 48%;
@@ -275,13 +275,10 @@ form textarea {
     margin-bottom: 0;
   }
 }
-/* Clearfix */
 .cf::before,
 .cf::after {
   content: " ";
-  /* 1 */
   display: table;
-  /* 2 */
 }
 .cf::after {
   clear: both;
