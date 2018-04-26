@@ -52,7 +52,7 @@ a:link, a:hover, a:active {
   text-align: center;
 }
 .social-icon {
-  display: inline-block;
+  display: inline-block !important;
   width: 64px;
   height: auto;
   margin: 10px 16px;
