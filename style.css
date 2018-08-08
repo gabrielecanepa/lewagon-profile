@@ -233,11 +233,11 @@ form input, form textarea {
   margin-top: 1em;
   resize: none;
   font-size: .9rem;
-  border: 1px solid #CCC;
+  border: 2px solid #CCC;
   transition: all 200ms ease-out;
 }
 form input:focus, form textarea:focus {
-  border: 1px solid #DD5555;
+  border: 2px solid #DD5555;
 }
 form #input-submit {
   color: white;
@@ -253,7 +253,7 @@ form #input-submit:hover {
   background-color: #C61414;
 }
 form textarea {
-  height: 9.8em;
+  height: 9.1rem;
 }
 
 .half {
